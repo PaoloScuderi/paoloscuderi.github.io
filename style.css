@@ -1,83 +1,77 @@
-/* =========================
-   GLOBAL
-========================= */
-
-
-* {
-    box-sizing: border-box;
-}
-
-
 body {
-
     margin: 0;
-
     background: white;
-
     color: #222;
-
-    font-family: "Helvetica Neue", Arial, sans-serif;
-
-    line-height: 1.6;
-
+    font-family: Arial, Helvetica, sans-serif;
 }
-
-
-
-p {
-
-    font-size: 15px;
-
-    color: #555;
-
-    margin-top: 8px;
-
-}
-
-
-
-a {
-
-    color: #003B5C;
-
-    text-decoration: none;
-
-    margin-right: 18px;
-
-    font-size: 14px;
-
-}
-
-
-
-a:hover {
-
-    text-decoration: underline;
-
-}
-
-
-
-
-
-/* =========================
-   HEADER
-========================= */
 
 
 .header {
-
-    max-width: 1000px;
-
-    margin: 50px auto 30px auto;
-
-    padding: 0 40px;
+    max-width: 950px;
+    margin: 40px auto 20px auto;
+    padding: 0 30px;
 
     display: flex;
-
     justify-content: space-between;
-
     align-items: flex-start;
+}
+
+
+.header-text {
+    max-width: 700px;
+}
+
+
+h1 {
+    font-size: 38px;
+    margin: 0;
+    font-weight: 700;
+}
+
+
+.header h2 {
+    margin: 5px 0 15px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #555;
+}
+
+
+.tagline {
+    font-size: 14px;
+    color: #003B5C;
+}
+
+
+.about {
+    margin-top: 20px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+
+
+.profile img {
+    width: 130px;
+    height: 130px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
+
+
+.layout {
+
+    max-width: 950px;
+
+    margin: 30px auto;
+
+    padding: 0 30px;
+
+    display: grid;
+
+    grid-template-columns: 40% 60%;
 
     gap: 40px;
 
@@ -85,120 +79,9 @@ a:hover {
 
 
 
-.header-text {
-
-    flex: 1;
-
-}
-
-
-
-h1 {
-
-    font-size: 44px;
-
-    line-height: 1.1;
-
-    margin: 0;
-
-    font-weight: 700;
-
-    color: #111;
-
-}
-
-
-
-.header h2 {
-
-    font-size: 22px;
-
-    font-weight: 400;
-
-    color: #003B5C;
-
-    margin: 8px 0 15px 0;
-
-}
-
-
-
-.tagline {
-
-    font-size: 14px;
-
-    color: #666;
-
-    letter-spacing: 0.5px;
-
-}
-
-
-
-.about {
-
-    max-width: 650px;
-
-    margin-top: 25px;
-
-}
-
-
-
-.links {
-
-    margin-top: 20px;
-
-}
-
-
-
-
-
-/* FOTO */
-
-.profile img {
-
-    width: 170px;
-
-    height: 170px;
-
-    object-fit: cover;
-
-    border-radius: 8px;
-
-}
-
-
-
-
-
-/* =========================
-   TWO COLUMN LAYOUT
-========================= */
-
-
-.layout {
-
-    max-width: 1000px;
-
-    margin: auto;
-
-    padding: 0 40px;
-
-    display: grid;
-
-    grid-template-columns: 40% 60%;
-
-    gap: 50px;
-
-}
-
-
-
 section {
 
-    margin-bottom: 38px;
+    margin-bottom: 30px;
 
 }
 
@@ -206,140 +89,93 @@ section {
 
 h3 {
 
-    font-size: 13px;
+    font-size: 12px;
 
-    letter-spacing: 2px;
+    letter-spacing: 1.8px;
 
     color: #003B5C;
 
-    font-weight: 600;
-
     border-bottom: 1px solid #ddd;
 
-    padding-bottom: 8px;
+    padding-bottom: 5px;
 
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 
 }
 
-
-
-
-
-/* =========================
-   ITEMS
-========================= */
 
 
 .item {
 
-    margin-bottom: 25px;
+    margin-bottom: 18px;
 
 }
-
 
 
 .item strong {
 
-    font-size: 16px;
-
-    color: #222;
+    font-size: 15px;
 
 }
 
 
+p {
 
+    font-size: 14px;
 
+    color: #555;
 
-/* =========================
-   MAP PLACEHOLDER
-========================= */
+    margin: 5px 0;
+
+}
+
 
 
 .map-placeholder {
 
-    height: 250px;
+    height: 180px;
 
     border: 1px solid #ddd;
 
-    display: flex;
+    display:flex;
 
-    align-items: center;
+    justify-content:center;
 
-    justify-content: center;
+    align-items:center;
 
-    text-align: center;
+    font-size:13px;
 
-    color: #777;
-
-    font-size: 14px;
+    color:#777;
 
 }
 
-
-
-
-
-/* =========================
-   FOOTER
-========================= */
 
 
 footer {
 
-    max-width: 1000px;
+    max-width:950px;
 
-    margin: 40px auto;
+    margin:auto;
 
-    padding: 0 40px 40px 40px;
-
-    border-top: 1px solid #ddd;
+    padding:30px;
 
 }
 
-
-
-
-
-/* =========================
-   MOBILE
-========================= */
 
 
 @media(max-width:800px){
 
+.layout {
+
+grid-template-columns:1fr;
+
+}
+
 
 .header {
 
-    flex-direction: column-reverse;
+flex-direction:column;
 
 }
-
-
-
-.layout {
-
-    grid-template-columns: 1fr;
-
-}
-
-
-
-.profile img {
-
-    width: 140px;
-
-    height: 140px;
-
-}
-
-
-
-h1 {
-
-    font-size: 36px;
-
-}
-
 
 }
