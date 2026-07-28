@@ -22,7 +22,6 @@ body {
 }
 
 
-
 p {
 
     margin: 6px 0 0;
@@ -32,7 +31,6 @@ p {
     color: #5f6b73;
 
 }
-
 
 
 strong {
@@ -47,6 +45,7 @@ strong {
 
 
 
+
 /* =========================
    HEADER - CONSULTING STYLE
 ========================= */
@@ -54,9 +53,9 @@ strong {
 
 .header {
 
-    max-width: 950px;
+    max-width: 1000px;
 
-    margin: 55px auto 35px;
+    margin: 70px auto 45px;
 
     padding: 0 30px;
 
@@ -66,7 +65,7 @@ strong {
 
     align-items: center;
 
-    gap: 50px;
+    gap: 70px;
 
 }
 
@@ -84,13 +83,15 @@ h1 {
 
     margin: 0;
 
-    font-size: 46px;
+    font-size: 52px;
 
-    line-height: 1.1;
+    line-height: 1.05;
 
-    letter-spacing: -0.8px;
+    letter-spacing: -1px;
 
     color: #00263d;
+
+    font-weight: 700;
 
 }
 
@@ -98,9 +99,9 @@ h1 {
 
 .header h2 {
 
-    margin: 10px 0 15px;
+    margin: 12px 0 18px;
 
-    font-size: 22px;
+    font-size: 23px;
 
     font-weight: 400;
 
@@ -123,19 +124,24 @@ h1 {
 
 
 
+
+/* PHOTO - BAIN/MCKINSEY STYLE */
+
+
 .profile img {
 
-    width: 190px;
+    width: 260px;
 
-    height: 190px;
+    height: 320px;
 
     object-fit: cover;
 
-    border-radius: 8px;
+    border-radius: 0;
 
-    border: 2px solid #003B5C;
+    border: none;
 
 }
+
 
 
 
@@ -148,7 +154,7 @@ h1 {
 
 .links {
 
-    margin-top: 22px;
+    margin-top: 25px;
 
 }
 
@@ -158,9 +164,9 @@ h1 {
 
     color: #003B5C;
 
-    font-size: 14px;
-
     text-decoration: none;
+
+    font-size: 14px;
 
     margin-right: 20px;
 
@@ -178,26 +184,67 @@ h1 {
 
 
 
+
 /* =========================
-   MAIN LAYOUT
+   ABOUT
+========================= */
+
+
+.about-container {
+
+
+    max-width:1000px;
+
+
+    margin:0 auto 45px;
+
+
+    padding:0 30px;
+
+
+}
+
+
+
+.about-container h3 {
+
+    margin-bottom:18px;
+
+}
+
+
+
+
+
+
+/* =========================
+   MAIN CONTENT
 ========================= */
 
 
 .layout {
 
-    max-width:950px;
+
+    max-width:1000px;
+
 
     margin:auto;
 
+
     padding:0 30px;
+
 
     display:grid;
 
+
     grid-template-columns:40% 60%;
+
 
     gap:45px;
 
+
 }
+
 
 
 
@@ -210,7 +257,9 @@ h1 {
 
 section {
 
+
     margin-bottom:35px;
+
 
 }
 
@@ -218,36 +267,30 @@ section {
 
 h3 {
 
+
     margin:0 0 18px;
+
 
     padding-bottom:7px;
 
+
     border-bottom:1px solid #d8e0e6;
+
 
     color:#003B5C;
 
+
     font-size:12px;
+
 
     letter-spacing:2px;
 
+
     font-weight:700;
 
-}
-
-
-
-
-
-/* =========================
-   ABOUT
-========================= */
-
-
-.about {
-
-    margin-top:40px;
 
 }
+
 
 
 
@@ -260,11 +303,15 @@ h3 {
 
 .timeline-item {
 
+
     position:relative;
 
-    padding:8px 0 10px 22px;
+
+    padding:8px 0 12px 22px;
+
 
     margin-bottom:22px;
+
 
 }
 
@@ -275,63 +322,86 @@ h3 {
 
     content:"";
 
+
     position:absolute;
+
 
     left:0;
 
+
     top:0;
+
 
     width:6px;
 
+
     height:100%;
+
 
     background:#005B96;
 
-    border-radius:1px;
 
 }
+
 
 
 
 .timeline-item strong {
 
+
     display:block;
 
-    margin-bottom:4px;
+
+    margin-bottom:5px;
+
 
 }
+
+
+
 
 
 
 
 
 /* =========================
-   MAP PLACEHOLDER
+   WORLD MAP PLACEHOLDER
 ========================= */
 
 
 .map-placeholder {
 
 
-    height:230px;
+    height:260px;
+
 
     background:#f7f9fb;
 
+
     border:1px solid #d8e0e6;
+
 
     display:flex;
 
+
     align-items:center;
+
 
     justify-content:center;
 
+
     text-align:center;
+
 
     color:#005B96;
 
+
     font-size:14px;
 
+
 }
+
+
 
 
 
@@ -344,15 +414,23 @@ h3 {
 
 footer {
 
-    max-width:950px;
+
+    max-width:1000px;
+
 
     margin:40px auto;
 
+
     padding:25px 30px;
+
 
     border-top:1px solid #d8e0e6;
 
+
 }
+
+
+
 
 
 
@@ -366,11 +444,15 @@ footer {
 @media(max-width:850px){
 
 
+
 .header {
+
 
     flex-direction:column;
 
+
     align-items:flex-start;
+
 
 }
 
@@ -378,9 +460,12 @@ footer {
 
 .profile img {
 
-    width:140px;
 
-    height:140px;
+    width:180px;
+
+
+    height:220px;
+
 
 }
 
@@ -388,7 +473,9 @@ footer {
 
 .layout {
 
+
     grid-template-columns:1fr;
+
 
 }
 
@@ -396,7 +483,9 @@ footer {
 
 h1 {
 
-    font-size:36px;
+
+    font-size:38px;
+
 
 }
 
