@@ -8,7 +8,7 @@
 
 
 body {
-   background: red !important;
+    background: #ffffff;
 }
 
 
@@ -43,9 +43,9 @@ strong {
 
 .header {
 
-    max-width: 1000px;
+    max-width: 1100px;
 
-    margin: 70px auto 45px;
+    margin: 80px auto 55px;
 
     padding: 0 30px;
 
@@ -55,7 +55,7 @@ strong {
 
     align-items: center;
 
-    gap: 70px;
+    gap: 90px;
 
 }
 
@@ -120,11 +120,13 @@ h1 {
 
 .profile img {
 
-    width: 260px;
+    width: 340px;
 
-    height: 320px;
+    height: 430px;
 
     object-fit: cover;
+
+    object-position: center top;
 
     border-radius: 0;
 
