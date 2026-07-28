@@ -208,21 +208,20 @@ h1 {
 
     z-index:1;
 
-    right:-45px;
+    right:-35px;
 
     top:40px;
 
-    width:340px;
+    width:360px;
 
     height:450px;
 
-
     background:linear-gradient(
-        90deg,
-        #d7eaf7 0%,
-        #eaf4fb 45%,
-        rgba(255,255,255,0.95) 100%
-    );
+    90deg,
+    #6fa8c9 0%,
+    #d7eaf6 55%,
+    #ffffff 100%
+);
 
 }
 
