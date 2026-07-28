@@ -15,7 +15,7 @@ body {
 
     color: #1b2631;
 
-    font-family: "Inter", sans-serif;
+    font-family: "Inter", Arial, sans-serif;
 
     line-height: 1.55;
 
@@ -46,34 +46,33 @@ strong {
 
 
 
+
 /* =========================
-   HEADER - CONSULTING STYLE
+   HERO SECTION
 ========================= */
 
 
-.header {
+.hero {
 
-    max-width: 1000px;
+    max-width: 1100px;
 
-    margin: 70px auto 45px;
+    margin: 75px auto 55px;
 
     padding: 0 30px;
 
-    display: flex;
+    display: grid;
 
-    justify-content: space-between;
+    grid-template-columns: 60% 40%;
 
     align-items: center;
 
-    gap: 70px;
+    gap: 30px;
 
 }
 
 
 
-.header-text {
-
-    flex: 1;
+.hero-text {
 
     padding-left: 0;
 
@@ -83,31 +82,31 @@ strong {
 
 h1 {
 
-    margin: 0;
+    margin:0;
 
-    font-size: 52px;
+    font-size:56px;
 
-    line-height: 1.05;
+    line-height:1.05;
 
-    letter-spacing: -1px;
+    letter-spacing:-1.5px;
 
-    color: #00263d;
+    color:#00263d;
 
-    font-weight: 700;
+    font-weight:700;
 
 }
 
 
 
-.header h2 {
+.hero h2 {
 
-    margin: 12px 0 18px;
+    margin:15px 0 18px;
 
-    font-size: 23px;
+    font-size:24px;
 
-    font-weight: 400;
+    font-weight:400;
 
-    color: #005B96;
+    color:#005B96;
 
 }
 
@@ -115,36 +114,14 @@ h1 {
 
 .tagline {
 
-    font-size: 14px;
+    color:#005B96;
 
-    color: #005B96;
+    font-size:15px;
 
-    letter-spacing: 0.8px;
-
-}
-
-
-
-
-
-/* PHOTO - BAIN/MCKINSEY STYLE */
-
-
-.profile img {
-
-    width: 340px;
-
-    height: 430px;
-
-    object-fit: cover;
-
-    object-position: center top;
-
-    border-radius: 0;
-
-    border: none;
+    letter-spacing:0.8px;
 
 }
+
 
 
 
@@ -158,24 +135,22 @@ h1 {
 
 .links {
 
-    margin-top: 25px;
+    margin-top:28px;
 
 }
-
 
 
 .links a {
 
-    color: #003B5C;
+    color:#003B5C;
 
-    text-decoration: none;
+    text-decoration:none;
 
-    font-size: 14px;
+    margin-right:22px;
 
-    margin-right: 20px;
+    font-size:14px;
 
 }
-
 
 
 .links a:hover {
@@ -189,12 +164,82 @@ h1 {
 
 
 
+
+/* =========================
+   PHOTO AREA
+========================= */
+
+
+.hero-photo {
+
+    position:relative;
+
+    height:470px;
+
+    display:flex;
+
+    justify-content:flex-end;
+
+    align-items:center;
+
+}
+
+
+
+.hero-photo img {
+
+    position:relative;
+
+    z-index:2;
+
+    width:350px;
+
+    height:450px;
+
+    object-fit:cover;
+
+    object-position:center top;
+
+}
+
+
+
+.photo-background {
+
+    position:absolute;
+
+    z-index:1;
+
+    right:-20px;
+
+    top:40px;
+
+    width:320px;
+
+    height:450px;
+
+
+    background:linear-gradient(
+        270deg,
+        #dcecf8 0%,
+        #edf5fb 55%,
+        rgba(255,255,255,0) 100%
+    );
+
+}
+
+
+
+
+
+
+
 /* =========================
    ABOUT
 ========================= */
 
 
-.about-container{
+.about {
 
     max-width:1100px;
 
@@ -205,18 +250,24 @@ h1 {
 }
 
 
+h3 {
 
-.about-container h3 {
+    margin:0 0 18px;
 
-    margin: 0 0 18px;
+    padding-bottom:8px;
 
-    padding-bottom: 8px;
+    border-bottom:1px solid #d8e0e6;
 
-    border-bottom: 1px solid #d8e0e6;
+    color:#003B5C;
 
-    width: 100%;
+    font-size:12px;
+
+    letter-spacing:2px;
+
+    font-weight:700;
 
 }
+
 
 
 
@@ -228,28 +279,22 @@ h1 {
 ========================= */
 
 
-.layout {
+.content {
 
-
-    max-width:1000px;
-
+    max-width:1100px;
 
     margin:auto;
 
-
     padding:0 30px;
-
 
     display:grid;
 
-
     grid-template-columns:40% 60%;
 
-
-    gap:45px;
-
+    gap:50px;
 
 }
+
 
 
 
@@ -257,73 +302,23 @@ h1 {
 
 
 /* =========================
-   SECTIONS
+   TIMELINE ITEMS
 ========================= */
 
 
-section {
-
-
-    margin-bottom:35px;
-
-
-}
-
-
-
-h3 {
-
-
-    margin:0 0 18px;
-
-
-    padding-bottom:7px;
-
-
-    border-bottom:1px solid #d8e0e6;
-
-
-    color:#003B5C;
-
-
-    font-size:12px;
-
-
-    letter-spacing:2px;
-
-
-    font-weight:700;
-
-
-}
-
-
-
-
-
-
-/* =========================
-   VERTICAL BLUE BLOCKS
-========================= */
-
-
-.timeline-item {
-
+.item {
 
     position:relative;
 
+    padding-left:22px;
 
-    padding:8px 0 12px 22px;
-
-
-    margin-bottom:22px;
-
+    margin-bottom:25px;
 
 }
 
 
 
-.timeline-item::before {
+.item::before {
 
 
     content:"";
@@ -338,7 +333,7 @@ h3 {
     top:0;
 
 
-    width:6px;
+    width:5px;
 
 
     height:100%;
@@ -352,36 +347,21 @@ h3 {
 
 
 
-.timeline-item strong {
-
-
-    display:block;
-
-
-    margin-bottom:5px;
-
-
-}
-
-
-
-
-
 
 
 
 /* =========================
-   WORLD MAP PLACEHOLDER
+   WORLD MAP
 ========================= */
 
 
-.map-placeholder {
+.world-map {
 
 
-    height:260px;
+    height:280px;
 
 
-    background:#f7f9fb;
+    background:#f5f9fc;
 
 
     border:1px solid #d8e0e6;
@@ -402,7 +382,7 @@ h3 {
     color:#005B96;
 
 
-    font-size:14px;
+    font-size:15px;
 
 
 }
@@ -421,10 +401,10 @@ h3 {
 footer {
 
 
-    max-width:1000px;
+    max-width:1100px;
 
 
-    margin:40px auto;
+    margin:45px auto;
 
 
     padding:25px 30px;
@@ -441,7 +421,6 @@ footer {
 
 
 
-
 /* =========================
    MOBILE
 ========================= */
@@ -450,31 +429,39 @@ footer {
 @media(max-width:850px){
 
 
-.header{
-
-    max-width:1100px;
-}
-
-
-
-.profile img {
-
-
-    width:180px;
-
-
-    height:220px;
-
-
-}
-
-
-
-.layout {
+.hero {
 
 
     grid-template-columns:1fr;
 
+}
+
+
+
+.hero-photo {
+
+
+    justify-content:flex-start;
+
+}
+
+
+
+.hero-photo img {
+
+
+    width:260px;
+
+    height:330px;
+
+}
+
+
+
+.content {
+
+
+    grid-template-columns:1fr;
 
 }
 
@@ -482,9 +469,7 @@ footer {
 
 h1 {
 
-
-    font-size:38px;
-
+    font-size:40px;
 
 }
 
