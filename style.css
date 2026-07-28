@@ -6,7 +6,6 @@
     box-sizing: border-box;
 }
 
-
 body {
 
     margin: 0;
@@ -18,18 +17,16 @@ body {
     font-family: "Helvetica Neue", Arial, sans-serif;
 
     line-height: 1.55;
-
 }
-
 
 
 p {
 
+    margin: 5px 0 0 0;
+
     font-size: 14px;
 
     color: #5f6b73;
-
-    margin: 6px 0 0 0;
 
 }
 
@@ -53,15 +50,17 @@ strong {
 
 .header {
 
-    max-width: 1000px;
+    max-width: 950px;
 
-    margin: 35px auto 25px;
+    margin: 35px auto 30px;
 
-    padding: 0 35px;
+    padding: 0 30px;
 
     display: flex;
 
     justify-content: space-between;
+
+    align-items: flex-start;
 
     gap: 40px;
 
@@ -76,16 +75,15 @@ strong {
 }
 
 
-
 h1 {
-
-    font-size: 42px;
 
     margin: 0;
 
-    color: #00263d;
+    font-size: 42px;
 
     letter-spacing: -0.5px;
+
+    color: #00263d;
 
 }
 
@@ -93,7 +91,7 @@ h1 {
 
 .header h2 {
 
-    margin: 8px 0;
+    margin: 8px 0 12px;
 
     font-size: 21px;
 
@@ -111,7 +109,7 @@ h1 {
 
     color: #005B96;
 
-    letter-spacing: 0.5px;
+    letter-spacing: 0.8px;
 
 }
 
@@ -119,13 +117,24 @@ h1 {
 
 
 
-/* PHOTO */
+.about {
+
+    margin-top: 25px;
+
+}
+
+
+
+
+
+/* FOTO */
+
 
 .profile img {
 
-    width: 140px;
+    width: 130px;
 
-    height: 140px;
+    height: 130px;
 
     object-fit: cover;
 
@@ -144,9 +153,10 @@ h1 {
 
 .links {
 
-    margin-top: 15px;
+    margin-top: 18px;
 
 }
+
 
 
 .links a {
@@ -157,14 +167,14 @@ h1 {
 
     font-size: 14px;
 
-    margin-right: 20px;
+    margin-right: 18px;
 
 }
 
 
 .links a:hover {
 
-    text-decoration: underline;
+    color: #005B96;
 
 }
 
@@ -173,28 +183,39 @@ h1 {
 
 
 /* =========================
-   LAYOUT
+   MAIN TWO COLUMNS
 ========================= */
 
 
 .layout {
 
-    max-width: 1000px;
+
+    max-width: 950px;
+
 
     margin: auto;
 
-    padding: 0 35px;
+
+    padding: 0 30px;
+
 
     display: grid;
 
+
     grid-template-columns: 40% 60%;
 
+
     gap: 45px;
+
 
 }
 
 
 
+
+/* =========================
+   SECTIONS
+========================= */
 
 
 section {
@@ -203,11 +224,6 @@ section {
 
 }
 
-
-
-
-
-/* SECTION TITLES */
 
 
 h3 {
@@ -220,11 +236,11 @@ h3 {
 
     font-weight: 700;
 
-    margin: 0 0 18px 0;
+    border-bottom: 1px solid #d8e0e6;
 
-    padding-bottom: 6px;
+    padding-bottom: 7px;
 
-    border-bottom: 1px solid #d6dde3;
+    margin-bottom: 18px;
 
 }
 
@@ -233,20 +249,21 @@ h3 {
 
 
 /* =========================
-   TIMELINE CARDS
+   VERTICAL BLOCK ITEMS
 ========================= */
 
 
 .timeline-item {
 
 
-    border-left: 3px solid #005B96;
-
-    padding-left: 15px;
-
-    margin-bottom: 22px;
-
     position: relative;
+
+
+    padding: 8px 0 10px 20px;
+
+
+    margin-bottom: 20px;
+
 
 }
 
@@ -257,64 +274,83 @@ h3 {
 
     content: "";
 
-    width: 7px;
-
-    height: 7px;
-
-    background: #005B96;
-
-    border-radius: 50%;
 
     position: absolute;
 
-    left: -5px;
 
-    top: 5px;
+    left: 0;
+
+
+    top: 0;
+
+
+    width: 5px;
+
+
+    height: 100%;
+
+
+    background: #005B96;
+
+
+    border-radius: 1px;
 
 
 }
-
-
 
 
 
 .timeline-item strong {
 
+
     display:block;
 
-    color:#003B5C;
+
+    margin-bottom:4px;
+
 
 }
+
+
 
 
 
 
 
 /* =========================
-   WORLD MAP PLACEHOLDER
+   MAP
 ========================= */
 
 
 .map-placeholder {
 
 
-    height: 260px;
+    height: 230px;
 
-    border: 1px solid #d6dde3;
+
+    background: #f7f9fb;
+
+
+    border: 1px solid #d8e0e6;
+
 
     display:flex;
 
-    justify-content:center;
 
     align-items:center;
 
+
+    justify-content:center;
+
+
     text-align:center;
+
 
     color:#005B96;
 
+
     font-size:14px;
 
-    background:#f8fafc;
 
 }
 
@@ -330,13 +366,16 @@ h3 {
 footer {
 
 
-    max-width:1000px;
+    max-width:950px;
 
-    margin:30px auto;
 
-    padding:25px 35px;
+    margin:40px auto;
 
-    border-top:1px solid #d6dde3;
+
+    padding:20px 30px;
+
+
+    border-top:1px solid #d8e0e6;
 
 
 }
@@ -355,7 +394,9 @@ footer {
 
 .header {
 
+
     flex-direction:column-reverse;
+
 
 }
 
@@ -363,7 +404,9 @@ footer {
 
 .layout {
 
+
     grid-template-columns:1fr;
+
 
 }
 
@@ -371,9 +414,12 @@ footer {
 
 .profile img {
 
-    width:120px;
 
-    height:120px;
+    width:110px;
+
+
+    height:110px;
+
 
 }
 
@@ -381,7 +427,9 @@ footer {
 
 h1 {
 
+
     font-size:34px;
+
 
 }
 
