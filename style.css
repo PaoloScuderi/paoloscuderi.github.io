@@ -54,19 +54,48 @@ strong {
 
 .hero {
 
-    max-width: 1100px;
+    max-width:1100px;
 
-    margin: 75px auto 55px;
+    margin:75px auto 55px;
 
-    padding: 0 30px;
+    padding:0 30px;
 
-    display: grid;
+    display:grid;
 
-    grid-template-columns: 60% 40%;
+    grid-template-columns:60% 40%;
 
-    align-items: center;
+    align-items:center;
 
-    gap: 30px;
+    gap:30px;
+
+    position:relative;
+
+}
+
+.hero::before {
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:100vw;
+
+    height:430px;
+
+    top:40px;
+
+    z-index:-1;
+
+    background:linear-gradient(
+        90deg,
+        #8fbcd4 0%,
+        #d5eaf7 55%,
+        #ffffff 100%
+    );
 
 }
 
@@ -202,6 +231,7 @@ h1 {
 
 }
 
+/*
 .photo-background {
 
     position:absolute;
@@ -224,7 +254,7 @@ h1 {
 );
 
 }
-
+*/
 
 
 
