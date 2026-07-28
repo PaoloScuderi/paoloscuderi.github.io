@@ -202,8 +202,6 @@ h1 {
 
 }
 
-
-
 .photo-background {
 
     position:absolute;
@@ -214,16 +212,16 @@ h1 {
 
     top:40px;
 
-    width:320px;
+    width:340px;
 
     height:450px;
 
 
     background:linear-gradient(
-        270deg,
-        #dcecf8 0%,
-        #edf5fb 55%,
-        rgba(255,255,255,0) 100%
+        90deg,
+        #d7eaf7 0%,
+        #eaf4fb 45%,
+        rgba(255,255,255,0.95) 100%
     );
 
 }
