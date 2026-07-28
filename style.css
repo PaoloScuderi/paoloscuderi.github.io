@@ -8,17 +8,7 @@
 
 
 body {
-
-    margin: 0;
-
-    background: #ffffff;
-
-    color: #1b2631;
-
-    font-family: "Helvetica Neue", Arial, sans-serif;
-
-    line-height: 1.55;
-
+   background: red !important;
 }
 
 
