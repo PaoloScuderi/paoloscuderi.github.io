@@ -1,6 +1,7 @@
 /* =========================
-   GLOBAL STYLE
+   GLOBAL
 ========================= */
+
 
 * {
     box-sizing: border-box;
@@ -8,262 +9,274 @@
 
 
 body {
+
     margin: 0;
-    font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
-    color: #111827;
-    background: #ffffff;
-    line-height: 1.7;
+
+    background: white;
+
+    color: #222;
+
+    font-family: "Helvetica Neue", Arial, sans-serif;
+
+    line-height: 1.6;
+
 }
 
 
-section,
-footer {
-    max-width: 1200px;
-    margin: auto;
-    padding: 90px 60px;
+
+p {
+
+    font-size: 15px;
+
+    color: #555;
+
+    margin-top: 8px;
+
+}
+
+
+
+a {
+
+    color: #003B5C;
+
+    text-decoration: none;
+
+    margin-right: 18px;
+
+    font-size: 14px;
+
+}
+
+
+
+a:hover {
+
+    text-decoration: underline;
+
+}
+
+
+
+
+
+/* =========================
+   HEADER
+========================= */
+
+
+.header {
+
+    max-width: 1000px;
+
+    margin: 50px auto 30px auto;
+
+    padding: 0 40px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: flex-start;
+
+    gap: 40px;
+
+}
+
+
+
+.header-text {
+
+    flex: 1;
+
 }
 
 
 
 h1 {
-    font-size: 64px;
+
+    font-size: 44px;
+
     line-height: 1.1;
-    margin: 15px 0;
-    letter-spacing: -1.5px;
+
+    margin: 0;
+
+    font-weight: 700;
+
+    color: #111;
+
 }
 
 
-h2 {
-    font-size: 36px;
-    line-height: 1.25;
-    color: #0B2A41;
-    margin-bottom: 25px;
-}
 
+.header h2 {
 
-h3 {
     font-size: 22px;
-    color: #0B2A41;
-}
 
-
-p {
-    font-size: 18px;
-    color: #4B5563;
-}
-
-
-
-
-/* =========================
-   HERO
-========================= */
-
-
-.hero {
-    min-height: 90vh;
-    display: flex;
-    align-items: center;
-}
-
-
-.hero-content {
-
-    max-width: 1200px;
-    margin: auto;
-
-    display: grid;
-
-    grid-template-columns: 1.2fr 0.8fr;
-
-    gap: 70px;
-
-    padding: 70px 60px;
-
-}
-
-
-.subtitle {
-
-    font-size: 14px;
-    letter-spacing: 3px;
-    color: #0B2A41;
-    font-weight: 600;
-
-}
-
-
-.hero h2 {
-
-    color: #374151;
-    font-size: 30px;
     font-weight: 400;
 
+    color: #003B5C;
+
+    margin: 8px 0 15px 0;
+
 }
 
 
 
-.hero-image img {
+.tagline {
 
-    width: 100%;
+    font-size: 14px;
 
-    max-width: 380px;
+    color: #666;
 
-    border-radius: 12px;
+    letter-spacing: 0.5px;
+
+}
+
+
+
+.about {
+
+    max-width: 650px;
+
+    margin-top: 25px;
+
+}
+
+
+
+.links {
+
+    margin-top: 20px;
+
+}
+
+
+
+
+
+/* FOTO */
+
+.profile img {
+
+    width: 170px;
+
+    height: 170px;
 
     object-fit: cover;
 
+    border-radius: 8px;
+
 }
+
+
 
 
 
 /* =========================
-   BUTTONS
+   TWO COLUMN LAYOUT
 ========================= */
 
 
-.buttons {
+.layout {
 
-    margin-top: 35px;
+    max-width: 1000px;
 
-}
+    margin: auto;
 
-
-.button {
-
-    display: inline-block;
-
-    padding: 13px 28px;
-
-    margin-right: 15px;
-
-    background: #0B2A41;
-
-    color: white;
-
-    text-decoration: none;
-
-    border-radius: 5px;
-
-    font-weight: 500;
-
-}
-
-
-
-.button.secondary {
-
-    background: transparent;
-
-    border: 1px solid #0B2A41;
-
-    color: #0B2A41;
-
-}
-
-
-
-.button:hover {
-
-    opacity: 0.85;
-
-}
-
-
-
-/* =========================
-   SECTION LABEL
-========================= */
-
-
-.section-label {
-
-    font-size: 13px;
-
-    letter-spacing: 3px;
-
-    color: #0B2A41;
-
-    font-weight: 600;
-
-    margin-bottom: 15px;
-
-}
-
-
-
-/* =========================
-   EXPERTISE CARDS
-========================= */
-
-
-.cards {
+    padding: 0 40px;
 
     display: grid;
 
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: 40% 60%;
 
-    gap: 25px;
-
-    margin-top: 40px;
+    gap: 50px;
 
 }
 
 
 
-.card {
+section {
 
-    border: 1px solid #E5E7EB;
-
-    padding: 35px;
-
-    border-radius: 10px;
-
-    transition: 0.3s;
+    margin-bottom: 38px;
 
 }
 
 
 
-.card:hover {
+h3 {
 
-    transform: translateY(-5px);
+    font-size: 13px;
 
-    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    letter-spacing: 2px;
+
+    color: #003B5C;
+
+    font-weight: 600;
+
+    border-bottom: 1px solid #ddd;
+
+    padding-bottom: 8px;
+
+    margin-bottom: 20px;
 
 }
+
+
 
 
 
 /* =========================
-   TIMELINE
+   ITEMS
 ========================= */
 
 
-.timeline div {
+.item {
 
-    border-left: 3px solid #0B2A41;
-
-    padding-left: 30px;
-
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 
 }
+
+
+
+.item strong {
+
+    font-size: 16px;
+
+    color: #222;
+
+}
+
+
 
 
 
 /* =========================
-   AWARD
+   MAP PLACEHOLDER
 ========================= */
 
 
-.award {
+.map-placeholder {
 
-    background: #F8FAFC;
+    height: 250px;
 
-    border-radius: 12px;
+    border: 1px solid #ddd;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 14px;
 
 }
+
+
 
 
 
@@ -274,9 +287,17 @@ p {
 
 footer {
 
-    border-top: 1px solid #E5E7EB;
+    max-width: 1000px;
+
+    margin: 40px auto;
+
+    padding: 0 40px 40px 40px;
+
+    border-top: 1px solid #ddd;
 
 }
+
+
 
 
 
@@ -285,34 +306,38 @@ footer {
 ========================= */
 
 
-@media(max-width:900px){
+@media(max-width:800px){
 
 
-.hero-content {
+.header {
 
-    grid-template-columns:1fr;
+    flex-direction: column-reverse;
+
+}
+
+
+
+.layout {
+
+    grid-template-columns: 1fr;
 
 }
 
 
-.cards {
 
-    grid-template-columns:1fr;
+.profile img {
+
+    width: 140px;
+
+    height: 140px;
 
 }
+
 
 
 h1 {
 
-    font-size:45px;
-
-}
-
-
-section,
-footer {
-
-    padding:60px 30px;
+    font-size: 36px;
 
 }
 
