@@ -178,21 +178,6 @@ h1 {
 }
 
 
-
-.vertical-line-title {
-
-    width:6px;
-
-    background:#7FB3D5;
-
-    margin-right:16px;
-
-    border-radius:2px;
-
-}
-
-
-
 .hero-title {
 
     font-size:18px;
@@ -206,6 +191,22 @@ h1 {
     letter-spacing:0.3px;
 
 }
+
+.vertical-line-title {
+
+    width:6px;
+
+    background:#003B5C;
+
+    margin-right:16px;
+
+    border-radius:2px;
+
+}
+
+
+
+
 
 
 
@@ -228,19 +229,6 @@ h1 {
 
 
 
-.vertical-line-keyword {
-
-    width:6px;
-
-    background:#B8D8E8;
-
-    margin-right:16px;
-
-    border-radius:2px;
-
-}
-
-
 
 .tagline {
 
@@ -251,13 +239,27 @@ h1 {
     font-weight:500;
 
     line-height:1.7;
-
+   color:#007C91;
+/*
     color:#005B96;
-
+*/
     letter-spacing:0.8px;
 
 }
 
+
+
+.vertical-line-keyword {
+
+    width:6px;
+
+    background:#007C91;
+
+    margin-right:16px;
+
+    border-radius:2px;
+
+}
 
 
 
