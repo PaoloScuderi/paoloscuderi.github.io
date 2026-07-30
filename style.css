@@ -58,11 +58,22 @@ strong {
 /* =========================
    PROFESSIONAL TITLES
 ========================= */
+/* =========================
+   PROFESSIONAL TITLES
+========================= */
 
 .hero-title {
     margin-top: 12px;
     margin-bottom: 20px;
+
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 1.7;
+    color: #5FA8D3;
+    letter-spacing: 0.4px;
 }
+
+
 
 .hero-title p {
     margin: 4px 0;
