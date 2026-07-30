@@ -90,12 +90,35 @@ strong {
 
     z-index:-1;
 
+   background:linear-gradient(
+    90deg,
+    #DCEAF3 0%,
+    #EEF5F9 55%,
+    #FFFFFF 100%
+);
+   /*background:linear-gradient(
+    90deg,
+    #C7DCE8 0%,
+    #E6F0F5 55%,
+    #FFFFFF 100%
+);*/
+
+   /*background:linear-gradient(
+    90deg,
+    #C7DCE8 0%,
+    #E6F0F5 55%,
+    #FFFFFF 100%
+);*/
+
+   
+   /*
     background:linear-gradient(
         90deg,
         #8fbcd4 0%,
         #d5eaf7 55%,
         #ffffff 100%
     );
+*/
 
 }
 
