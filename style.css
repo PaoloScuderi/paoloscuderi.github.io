@@ -45,44 +45,10 @@ strong {
 
 
 
-
-
 /* =========================
    HERO SECTION
 ========================= */
 
-/* =========================
-   PROFESSIONAL TITLES
-========================= */
-
-/* =========================
-   PROFESSIONAL TITLES
-========================= */
-/* =========================
-   PROFESSIONAL TITLES
-========================= */
-
-.hero-title {
-    margin-top: 12px;
-    margin-bottom: 20px;
-
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.7;
-    color: #5FA8D3;
-    letter-spacing: 0.4px;
-}
-
-
-
-.hero-title p {
-    margin: 4px 0;
-    font-size: 18px;
-    font-weight: 300;
-    line-height: 1.4;
-    color: #5FA8D3;
-    letter-spacing: 0.4px;
-}
 
 .hero {
 
@@ -103,6 +69,8 @@ strong {
     position:relative;
 
 }
+
+
 
 .hero::before {
 
@@ -135,10 +103,17 @@ strong {
 
 .hero-text {
 
-    padding-left: 0;
+    padding-left:0;
 
 }
 
+
+
+
+
+/* =========================
+   NAME
+========================= */
 
 
 h1 {
@@ -159,18 +134,38 @@ h1 {
 
 
 
-.hero h2 {
 
-    margin:15px 0 18px;
 
-    font-size:24px;
+/* =========================
+   PROFESSIONAL TITLES
+========================= */
 
-    font-weight:400;
 
-    color:#005B96;
+.hero-title {
+
+    margin-top:12px;
+
+    margin-bottom:20px;
+
+    font-size:18px;
+
+    font-weight:300;
+
+    line-height:1.7;
+
+    color:#5FA8D3;
+
+    letter-spacing:0.4px;
 
 }
 
+
+
+
+
+/* =========================
+   TAGLINE
+========================= */
 
 
 .tagline {
@@ -182,8 +177,6 @@ h1 {
     letter-spacing:0.8px;
 
 }
-
-
 
 
 
@@ -201,6 +194,7 @@ h1 {
 }
 
 
+
 .links a {
 
     color:#003B5C;
@@ -211,7 +205,10 @@ h1 {
 
     font-size:14px;
 
+    font-weight:500;
+
 }
+
 
 
 .links a:hover {
@@ -219,8 +216,6 @@ h1 {
     color:#005B96;
 
 }
-
-
 
 
 
@@ -263,32 +258,6 @@ h1 {
 
 }
 
-/*
-.photo-background {
-
-    position:absolute;
-
-    z-index:1;
-
-    right:-35px;
-
-    top:40px;
-
-    width:360px;
-
-    height:450px;
-
-    background:linear-gradient(
-    90deg,
-    #6fa8c9 0%,
-    #d7eaf6 55%,
-    #ffffff 100%
-);
-
-}
-*/
-
-
 
 
 
@@ -309,6 +278,14 @@ h1 {
 }
 
 
+
+
+
+/* =========================
+   SECTION TITLES
+========================= */
+
+
 h3 {
 
     margin:0 0 18px;
@@ -326,8 +303,6 @@ h3 {
     font-weight:700;
 
 }
-
-
 
 
 
@@ -358,8 +333,6 @@ h3 {
 
 
 
-
-
 /* =========================
    TIMELINE ITEMS
 ========================= */
@@ -379,31 +352,21 @@ h3 {
 
 .item::before {
 
-
     content:"";
-
 
     position:absolute;
 
-
     left:0;
-
 
     top:0;
 
-
     width:5px;
-
 
     height:100%;
 
-
     background:#005B96;
 
-
 }
-
-
 
 
 
@@ -416,37 +379,25 @@ h3 {
 
 .world-map {
 
-
     height:280px;
-
 
     background:#f5f9fc;
 
-
     border:1px solid #d8e0e6;
-
 
     display:flex;
 
-
     align-items:center;
-
 
     justify-content:center;
 
-
     text-align:center;
-
 
     color:#005B96;
 
-
     font-size:15px;
 
-
 }
-
-
 
 
 
@@ -459,22 +410,15 @@ h3 {
 
 footer {
 
-
     max-width:1100px;
-
 
     margin:45px auto;
 
-
     padding:25px 30px;
-
 
     border-top:1px solid #d8e0e6;
 
-
 }
-
-
 
 
 
@@ -490,7 +434,6 @@ footer {
 
 .hero {
 
-
     grid-template-columns:1fr;
 
 }
@@ -499,7 +442,6 @@ footer {
 
 .hero-photo {
 
-
     justify-content:flex-start;
 
 }
@@ -507,7 +449,6 @@ footer {
 
 
 .hero-photo img {
-
 
     width:260px;
 
@@ -518,7 +459,6 @@ footer {
 
 
 .content {
-
 
     grid-template-columns:1fr;
 
