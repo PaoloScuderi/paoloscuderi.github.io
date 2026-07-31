@@ -41,8 +41,20 @@ strong {
 
 }
 
+/* =========================
+   WIP SECTION
+========================= */
 
-
+.wip-message {
+    margin: 20px auto;
+    padding: 12px 20px;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    background: #f2f2f2;
+    color: #555;
+    font-weight: 600;
+}
 
 
 /* =========================
